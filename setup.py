@@ -1,13 +1,15 @@
 from setuptools import find_packages, setup
 
+with open("README.md", 'r') as fh:
+    long_description = fh.read()
+
 setup(
-    name="sibarras-fib-py",
+    name="sibarras_fib_py",
     version="0.0.1",
     author="Samuel Ibarra",
     author_email="ing.samuelibarra@gmail.com",
     description="Calculates a fibonacci number",
-    long_description="A basic library that \
-        calculates fibonacci numbers",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/sibarras/sibarras-fib-py.git",
     install_requires=[],
