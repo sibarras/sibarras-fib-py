@@ -19,6 +19,6 @@ setup(
         "Programming Language :: Python :: 3",
         "Operationg System :: OS Independent",
     ],
-    python_requires='>=3',
+    python_requires='>=3.10',
     test_require=['pytest'],
 )
