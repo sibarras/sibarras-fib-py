@@ -3,6 +3,7 @@ import pathlib
 import requests # type: ignore
 
 def get_latest_version_number() -> str:
+    # dynamic repo name based on folder
     repo_name = pathlib.Path(__file__).parent.name
     req = requests.get(
       f"https://pypi.org/pypi/{repo_name}/json")
