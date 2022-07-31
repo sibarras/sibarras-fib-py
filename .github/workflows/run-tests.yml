@@ -16,6 +16,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - name: run tests
-        run: python -m unittest discover
+        run: |
+        python --version
+        python -m unittest discover
       - name: run type checking
         run: mypy sibarras_fib_py
