@@ -7,7 +7,7 @@ class RecurringFibNumberTest(TestCase):
         self.assertEqual(0, recurring_fibonacci_number(number=0))
     
     def test_negative(self):
-        # With exceptions we need to use the context manager
+        # NOTE: With exceptions we need to use the context manager
         with self.assertRaises(ValueError) as raised_error:
             recurring_fibonacci_number(number=-1)
             self.assertEqual(
