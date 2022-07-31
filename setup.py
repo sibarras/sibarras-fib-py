@@ -1,11 +1,15 @@
 from setuptools import find_packages, setup
+from pathlib import Path
 
-with open("README.md", 'r') as fh:
-    long_description = fh.read()
+with open("README.md", 'r') as rme:
+    long_description = rme.read()
+
+with open("./sibarras_fib_py/version.py", 'rt') as vr:
+    version = vr.read().split("=")[1].replace("'", "")
 
 setup(
     name="sibarras_fib_py",
-    version="0.0.1",
+    version=version,
     author="Samuel Ibarra",
     author_email="ing.samuelibarra@gmail.com",
     description="Calculates a fibonacci number",
